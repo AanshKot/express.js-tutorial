@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+         
+        <!-- the symbol used below means we are starting to run some code on the server that we want passed to the html page, the equal sign means output that code to the page 
+        locals will allow us to default a value if it is undefined in our server, but if it is defined in our server then we can use that defined value  -->
+
+        hello <%= locals.text || 'Default' %> 
+    </body>
+</html>
